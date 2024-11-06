@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/Nyasha/coding/CsharpProjects/TestProject/TestProject.csproj": {}
+    "/Users/Nyasha/Documents/labs/CsharpProjects/TestProject/TestProject.csproj": {}
   },
   "projects": {
-    "/Users/Nyasha/coding/CsharpProjects/TestProject/TestProject.csproj": {
+    "/Users/Nyasha/Documents/labs/CsharpProjects/TestProject/TestProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/Nyasha/coding/CsharpProjects/TestProject/TestProject.csproj",
+        "projectUniqueName": "/Users/Nyasha/Documents/labs/CsharpProjects/TestProject/TestProject.csproj",
         "projectName": "TestProject",
-        "projectPath": "/Users/Nyasha/coding/CsharpProjects/TestProject/TestProject.csproj",
+        "projectPath": "/Users/Nyasha/Documents/labs/CsharpProjects/TestProject/TestProject.csproj",
         "packagesPath": "/Users/Nyasha/.nuget/packages/",
-        "outputPath": "/Users/Nyasha/coding/CsharpProjects/TestProject/obj/",
+        "outputPath": "/Users/Nyasha/Documents/labs/CsharpProjects/TestProject/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/Nyasha/.nuget/NuGet/NuGet.Config"
