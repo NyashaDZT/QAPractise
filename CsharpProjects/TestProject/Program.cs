@@ -3,6 +3,7 @@ using System.Dynamic;
 using System.Security.Cryptography;
 using LabExercise3;
 using WeightConverter;
+using Lab05;
 
 namespace Lab01
 {
@@ -11,7 +12,9 @@ namespace Lab01
         static void Main(string[] args)
         {
             // TheLunchQueue();
-            doWeights();
+            // doWeights();
+            GetGrades();
+            
         }
 
         public static void TheLunchQueue()
@@ -38,6 +41,18 @@ namespace Lab01
             calculator.ConvertInputToStonesPounds(pounds);
             int kgs = get.GetInt("Enter KGs to convert to pounds: ");
             calculator.ConvertKgsToStonesPounds(kgs);
+        }
+
+        public static void GetGrades()
+        {
+            Lab3Exercises get = new Lab3Exercises();
+            Lab5 lab5 = new Lab5(); 
+            int score = get.GetInt("What did you score? ");
+            lab5.Grades(score);
+            string summer = get.GetString("Is is summer, please answer with \'yes\' or \'no\'");
+            string evening = get.GetString("Is it early evening, please answer with \'yes\' or \'no\'");
+            lab5.Part2(summer, evening);
+
         }
     }
 }
