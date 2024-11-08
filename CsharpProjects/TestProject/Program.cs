@@ -4,6 +4,9 @@ using System.Security.Cryptography;
 using LabExercise3;
 using WeightConverter;
 using Lab05;
+using Lab06;
+using Lab07;
+using Lab08;
 
 namespace Lab01
 {
@@ -13,8 +16,18 @@ namespace Lab01
         {
             // TheLunchQueue();
             // doWeights();
-            GetGrades();
-            
+            // GetGrades();
+            // ArrayMethods();
+            // BankApp();
+
+            Account myAccount = new Account(2, "Mine", 100);
+            ProcessAccount(myAccount);
+
+            int k = 100;
+            IncInt(k);
+            Console.WriteLine(k);
+
+
         }
 
         public static void TheLunchQueue()
@@ -46,12 +59,66 @@ namespace Lab01
         public static void GetGrades()
         {
             Lab3Exercises get = new Lab3Exercises();
-            Lab5 lab5 = new Lab5(); 
+            Lab5 lab5 = new Lab5();
             int score = get.GetInt("What did you score? ");
             lab5.Grades(score);
             string summer = get.GetString("Is is summer, please answer with \'yes\' or \'no\'");
             string evening = get.GetString("Is it early evening, please answer with \'yes\' or \'no\'");
             lab5.Part2(summer, evening);
+
+        }
+
+        public static void CalculateGrades()
+        {
+            Loops grades = new Loops();
+
+        }
+
+        public static void ArrayMethods()
+        {
+            Lab7 get = new Lab7();
+            Console.WriteLine(get.GetSum([1, 4, -5, 7, 0, 4, 6, 8]));
+        }
+
+        public static void BankApp()
+        {
+
+            // Account account = new Account(1, "Alice", 1000.0);
+
+            // account.GetDetails();
+
+            // account.Deposit(200.0);
+
+            // account.Deposit(-50.0);
+
+            // account.Withdraw(300.0);
+
+            // account.Withdraw(2000.0);
+
+            // account.GetDetails();
+
+            Account myAccount = new Account(2, "Mine", 100);
+
+            myAccount.AddInterest();
+
+            myAccount.GetDetails();
+
+            Account partnerAccount = myAccount;
+
+            partnerAccount.AddInterest();
+
+            myAccount.GetDetails();
+        }
+
+        static void ProcessAccount(Account acc)
+        {
+            acc.AddInterest();
+        }
+
+        private static void IncInt(int x)
+        {
+
+            x++;
 
         }
     }
