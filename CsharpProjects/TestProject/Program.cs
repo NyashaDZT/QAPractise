@@ -7,6 +7,7 @@ using Lab05;
 using Lab06;
 using Lab07;
 using Lab08;
+using LabEleven;
 
 namespace Lab01
 {
@@ -20,12 +21,22 @@ namespace Lab01
             // ArrayMethods();
             // BankApp();
 
-            Account myAccount = new Account(2, "Mine", 100);
-            ProcessAccount(myAccount);
+            // Account myAccount = new Account(2, "Mine", 100);
+            // ProcessAccount(myAccount);
 
-            int k = 100;
-            IncInt(k);
-            Console.WriteLine(k);
+            // int k = 100;
+            // IncInt(k);
+            // Console.WriteLine(k);
+
+            QAShop get = new QAShop();
+
+            ShoppingBasket basket1 = new ShoppingBasket("Laptop", 1, 999.99);
+            ShoppingBasket basket2 = new ShoppingBasket("Headphones", 2, 49.99);
+            ShoppingBasket basket3 = new ShoppingBasket("Smartphone", 1, 599.99);
+
+            get.Buy(basket1);
+            get.Buy(basket2);
+            get.Buy(basket3);
 
 
         }
