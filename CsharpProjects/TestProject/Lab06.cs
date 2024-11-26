@@ -1,4 +1,4 @@
-using LabExercise3;
+using Lab05;
 
 namespace Lab06
 {
@@ -6,7 +6,10 @@ namespace Lab06
     {
         public void Part1()
         {
-            Lab3Exercises get = new Lab3Exercises();
+            Lab5 get = new Lab5();
+
+            
+
 
 
         }

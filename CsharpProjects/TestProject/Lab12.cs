@@ -5,10 +5,12 @@ namespace Lab012
 {
     public class Vehicle
     {
+
+        public static int count { get; private set; } = 0;
         private int speed;
         private int lane;
 
-        RegistrationPlate registrationPlate;
+        public RegistrationPlate registrationPlate;
 
         public int DistanceTravelled { get; private set; }
 
@@ -16,6 +18,8 @@ namespace Lab012
         {
             this.speed = speed;
             this.lane = lane;
+            count++;
+            registrationPlate = RegistrationPlateFactory.GetNextRegistrationPlate();
         }
         void accelerate(int amount)
         {
@@ -24,7 +28,7 @@ namespace Lab012
 
         void brake(int amount)
         {
-
+            speed -= amount;
         }
 
         string getDetails()
